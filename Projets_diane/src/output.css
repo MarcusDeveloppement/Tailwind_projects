@@ -686,6 +686,10 @@ html {
   flex-basis: 24rem;
 }
 
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -759,6 +763,15 @@ html {
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-x-24 {
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
 }
 
 .rounded-md {
@@ -935,6 +948,11 @@ html {
   line-height: 2.25rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -945,6 +963,14 @@ html {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .tracking-wide {
