@@ -3,7 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script
+      src="https://kit.fontawesome.com/90c2f345b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body></body>
+  <body
+    class="min-h-screen bg-gradient-to-r from-sky-500 to-purple-500 p-8 text-slate-600"
+  >
+    <div class="container mx-auto min-h-screen rounded-xl bg-white">
+      <header class="grid grid-cols-3 items-center border-b px-12 py-8">
+        <img class="w-10" src="./assets/images/logo.png" alt="logo du site" />
+        <ul class="flex items-center justify-center gap-x-6 font-bold">
+          <a class="hover:text-sky-500" href="#">Home</a
+          ><a class="hover:text-sky-500" href="#">Invoices</a
+          ><a class="hover:text-sky-500" href="#">Clients</a
+          ><a class="hover:text-sky-500" href="#">Expenses</a>
+        </ul>
+        <ul class="flex items-center justify-end gap-x-6">
+          <li><i class="fa-regular fa-bell fa-lg text-slate-400"></i></li>
+          <li>
+            <img
+              class="w-8 rounded-full"
+              src="https://randomuser.me/api/portraits/men/83.jpg"
+              alt="image-profile"
+            />
+          </li>
+        </ul>
+      </header>
+    </div>
+  </body>
 </html>
