@@ -19,7 +19,7 @@
   <body
     class="min-h-screen bg-gradient-to-r from-sky-500 to-purple-500 p-8 text-slate-600"
   >
-    <div class="container mx-auto min-h-screen rounded-xl bg-white">
+    <div class="container mx-auto min-h-screen rounded-2xl bg-white">
       <header class="grid grid-cols-3 items-center border-b px-12 py-8">
         <img class="w-10" src="./assets/images/logo.png" alt="logo du site" />
         <ul class="flex items-center justify-center gap-x-6 font-bold">
@@ -39,6 +39,49 @@
           </li>
         </ul>
       </header>
+      <div class="flex justify-between border-b px-12 py-8 font-bold">
+        <ul class="flex items-center">
+          <li class="border-r pr-3 text-slate-950">Cashflow</li>
+          <a class="px-3 hover:text-sky-500" href="#">Last 7 days</a>
+          <a class="px-3 hover:text-sky-500" href="#">Last 30 days</a>
+          <a class="px-3 hover:text-sky-500" href="#">All-time</a>
+        </ul>
+        <button
+          class="rounded-lg bg-sky-500 px-4 py-2 text-white hover:bg-sky-600 active:bg-sky-700"
+        >
+          + New Invoice
+        </button>
+      </div>
+      <div class="grid grid-cols-4 divide-x border-b">
+        <div class="p-12 font-semibold">
+          <div class="mb-2 flex justify-between text-sm text-slate-400">
+            <p>Revenue</p>
+            <p>+4.75%</p>
+          </div>
+          <h3 class="text-3xl text-slate-950">$405,091.00</h3>
+        </div>
+        <div class="p-12 font-semibold">
+          <div class="mb-2 flex justify-between text-sm text-slate-400">
+            <p>Overdue Invoices</p>
+            <p class="text-red-500">+12.61%</p>
+          </div>
+          <h3 class="text-3xl text-slate-950">$12,091.00</h3>
+        </div>
+        <div class="p-12 font-semibold">
+          <div class="mb-2 flex justify-between text-sm text-slate-400">
+            <p>Outstanding invoices</p>
+            <p>-3.25%</p>
+          </div>
+          <h3 class="text-3xl text-slate-950">$205,222.00</h3>
+        </div>
+        <div class="p-12 font-semibold">
+          <div class="mb-2 flex justify-between text-sm text-slate-400">
+            <p>Expenses</p>
+            <p class="text-red-500">+5.75%</p>
+          </div>
+          <h3 class="text-3xl text-slate-950">$405,091.00</h3>
+        </div>
+      </div>
     </div>
   </body>
 </html>
