@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/90c2f345b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen p-8 bg-stone-100 text-slate-950">
+    <div class="container min-h-screen mx-auto rounded-xl bg-stone-200">
+      <header
+        class="flex items-center p-6 bg-white border-b gap-x-3 rounded-t-xl"
+      >
+        <img class="w-6" src="./assets/images/logo.png" alt="logo" />
+        <h1 class="text-xl font-bold">Biarritz Palace</h1>
+      </header>
+      <main class="grid grid-cols-[2fr_1fr] grid-rows-1">
+        <div class="p-6 text-sm bg-white">
+          <a
+            href="#"
+            class="flex items-center mb-6 font-bold transition-colors gap-x-3 hover:text-blue-500"
+          >
+            <i class="fa-solid fa-chevron-left fa-sm"></i> retour à la liste
+          </a>
+          <h2 class="mb-4 text-lg font-bold">Moyen de paiement</h2>
+          <div class="p-4 border rounded-lg">
+            <h4 class="mb-6 text-sm font-bold">Cartes sauvegardées</h4>
+            <div class="grid grid-cols-2 grid-rows-2 gap-2 p-2">
+              <label
+                for="paypal"
+                class="flex items-start justify-between p-4 transition-colors border rounded-lg cursor-pointer group gap-x-3 hover:bg-blue-500"
+              >
+                <i
+                  class="text-blue-300 transition-colors fa-brands fa-paypal group-hover:text-white"
+                ></i>
+                <div class="flex-auto">
+                  <h4
+                    class="mb-2 font-bold leading-4 transition-colors group-hover:text-white"
+                  >
+                    Paypal finissant par 1234
+                  </h4>
+                  <p
+                    class="text-xs transition-colors text-stone-500 group-hover:text-white"
+                  >
+                    Expire le 08/2026
+                  </p>
+                </div>
+                <input
+                  name="payment"
+                  id="paypal"
+                  class="self-center"
+                  type="radio"
+                />
+              </label>
+              <label
+                for="masterCard"
+                class="flex items-start justify-between p-4 transition-colors border rounded-lg cursor-pointer group gap-x-3 hover:bg-blue-500"
+              >
+                <i
+                  class="text-green-600 transition-colors fa-brands fa-cc-mastercard group-hover:text-white"
+                ></i>
+                <div class="flex-auto">
+                  <h4
+                    class="mb-2 font-bold leading-4 transition-colors group-hover:text-white"
+                  >
+                    Carte finissant par 1234
+                  </h4>
+                  <p
+                    class="text-xs transition-colors text-stone-500 group-hover:text-white"
+                  >
+                    Expire le 08/2026
+                  </p>
+                </div>
+                <input
+                  name="payment"
+                  id="masterCard"
+                  class="self-center"
+                  type="radio"
+                />
+              </label>
+              <label
+                for="visa"
+                class="flex items-start justify-between p-4 transition-colors border rounded-lg cursor-pointer group gap-x-3 hover:bg-blue-500"
+              >
+                <i
+                  class="text-blue-600 transition-colors fa-brands fa-cc-visa group-hover:text-white"
+                ></i>
+                <div class="flex-auto">
+                  <h4
+                    class="mb-2 font-bold leading-4 transition-colors group-hover:text-white"
+                  >
+                    Paypal finissant par 1234
+                  </h4>
+                  <p
+                    class="text-xs transition-colors text-stone-500 group-hover:text-white"
+                  >
+                    Expire le 08/2026
+                  </p>
+                </div>
+                <input
+                  name="payment"
+                  id="visa"
+                  class="self-center"
+                  type="radio"
+                />
+              </label>
+              <div
+                for="paypal"
+                class="flex items-center justify-center p-4 text-blue-500 transition-colors border rounded-lg gap-x-3 hover:bg-blue-500 hover:text-white"
+              >
+              <a class="font-bold" href="#"><i class="mr-3 fa-solid fa-circle-plus"></i> Ajouter une carte</a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
