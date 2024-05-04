@@ -22,25 +22,44 @@
       <strong class="font-bold">15H:45M:25S</strong>
     </p>
     <div class="container mx-auto">
-      <header class="flex items-center justify-between py-4">
-        <ul class="flex gap-x-6">
+      <header
+        class="relative flex items-center justify-between px-6 py-4 pl-0 sm:px-0"
+      >
+        <ul class="hidden gap-x-6 sm:flex">
           <li>Man</li>
           <li>Woman</li>
           <li>Kids</li>
           <li>Gift</li>
         </ul>
-        <span class="text-4xl font-black">Diane</span>
-        <ul class="flex gap-x-6 py-2 text-xl">
+        <span class="pl-6 text-4xl font-black sm:pl-0">Diane</span>
+        <ul class="hidden gap-x-6 py-2 text-xl sm:flex">
           <li><i class="fa-solid fa-magnifying-glass"></i></li>
           <li><i class="fa-solid fa-bag-shopping"></i></li>
           <li><i class="fa-solid fa-right-from-bracket"></i></li>
         </ul>
+        <div class="p-2 px-4 sm:hidden" id="menuTrigger">
+          <i class="fa-solid fa-bars fa-xl"></i>
+          <i class="fa-solid fa-xmark fa-xl !hidden"></i>
+        </div>
+        <ul
+          id="menu"
+          class="absolute top-16 hidden w-full border-b bg-white py-2 *:my-2 *:px-6 *:py-2"
+        >
+          <li class="border-l-4 border-black bg-gray-100">Accueil</li>
+          <li>Man</li>
+          <li>Woman</li>
+          <li>Kids</li>
+          <li>Gift</li>
+          <li>Recherche</li>
+          <li>Panier</li>
+          <li>Connexion</li>
+        </ul>
       </header>
       <section class="mb-36">
         <div
-          class="flex h-96 flex-wrap content-end items-end rounded-3xl bg-[url('./assets/images/hero.jpg')] bg-cover bg-center p-6 text-white"
+          class="flex h-96 flex-col flex-wrap items-end justify-end gap-y-3 bg-[url('./assets/images/hero.jpg')] bg-cover bg-center p-6 text-white sm:flex-row sm:content-end sm:justify-start sm:gap-y-0 sm:rounded-3xl"
         >
-          <div class="flex-auto flex-col gap-y-3">
+          <div class="flex-col gap-y-3 sm:flex-auto">
             <h1 class="text-5xl font-medium">DIANE NATURE COLLECTION</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
           </div>
@@ -56,8 +75,10 @@
         <p class="mb-8 text-sm text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, optio.
         </p>
-        <div class="mb-4 flex justify-center gap-x-4 text-left">
-          <article class="flex basis-96 flex-col gap-y-2">
+        <div
+          class="mb-4 grid grid-cols-1 grid-rows-2 justify-center gap-4 px-6 text-left md:grid-cols-[repeat(3,_minmax(0,_384px))] md:px-0"
+        >
+          <article class="flex flex-col gap-y-2">
             <div
               class="basis-80 rounded-3xl bg-[url('./assets/images/product-1.jpg')] bg-cover bg-center"
             ></div>
@@ -68,7 +89,7 @@
             >
             <strong>$45</strong>
           </article>
-          <article class="flex basis-96 flex-col gap-y-2">
+          <article class="flex flex-col gap-y-2">
             <div
               class="basis-80 rounded-3xl bg-[url('./assets/images/product-2.jpg')] bg-cover bg-center"
             ></div>
@@ -79,7 +100,7 @@
             >
             <strong>$45</strong>
           </article>
-          <article class="flex basis-96 flex-col gap-y-2">
+          <article class="flex flex-col gap-y-2">
             <div
               class="basis-80 rounded-3xl bg-[url('./assets/images/product-3.jpg')] bg-cover bg-center"
             ></div>
@@ -90,9 +111,7 @@
             >
             <strong>$45</strong>
           </article>
-        </div>
-        <div class="mb-28 flex justify-center gap-x-4 text-left">
-          <article class="flex basis-96 flex-col gap-y-2">
+          <article class="flex flex-col gap-y-2">
             <div
               class="basis-80 rounded-3xl bg-[url('./assets/images/product-4.jpg')] bg-cover bg-bottom"
             ></div>
@@ -103,7 +122,7 @@
             >
             <strong>$45</strong>
           </article>
-          <article class="flex basis-96 flex-col gap-y-2">
+          <article class="flex flex-col gap-y-2">
             <div
               class="basis-80 rounded-3xl bg-[url('./assets/images/product-5.jpg')] bg-cover bg-bottom"
             ></div>
@@ -114,7 +133,7 @@
             >
             <strong>$45</strong>
           </article>
-          <article class="flex basis-96 flex-col gap-y-2">
+          <article class="flex flex-col gap-y-2">
             <div
               class="basis-80 rounded-3xl bg-[url('./assets/images/product-6.jpg')] bg-cover bg-center"
             ></div>
@@ -127,11 +146,11 @@
           </article>
         </div>
       </section>
-      <section class="mb-32 flex flex-col items-center gap-y-8">
+      <section class="mb-32 flex flex-col items-center gap-y-8 px-6 sm:px-0">
         <div
           class="h-80 w-full rounded-3xl bg-[url('./assets/images/wedding.png')] bg-cover bg-center"
         ></div>
-        <h2 class="text-4xl font-medium">WEAR TO WEDDING</h2>
+        <h2 class="text-center text-4xl font-medium">WEAR TO WEDDING</h2>
         <p class="text-center text-sm text-gray-400">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum,
           aperiam?
@@ -142,7 +161,9 @@
           See details
         </button>
       </section>
-      <section class="mb-32 flex justify-center gap-4 text-white">
+      <section
+        class="mb-32 flex flex-col justify-center gap-4 px-6 text-white sm:flex-row sm:px-0"
+      >
         <div
           class="flex h-96 basis-80 flex-col items-start justify-end gap-y-2 rounded-3xl bg-[url('./assets/images/man.jpg')] bg-cover bg-center p-6"
         >
@@ -174,7 +195,9 @@
           </button>
         </div>
       </section>
-      <footer class="mb-32 flex gap-x-24">
+      <footer
+        class="mb-32 flex flex-col gap-x-24 gap-y-12 px-6 sm:flex-row sm:px-0"
+      >
         <div class="flex basis-1/2 flex-col gap-y-6">
           <h2 class="text-4xl font-extrabold">Diane</h2>
           <p class="text-sm text-gray-400">
@@ -182,9 +205,9 @@
             veritatis! Accusantium non id nam nesciunt.
           </p>
 
-          <div class="flex gap-x-4">
+          <div class="flex flex-col gap-x-4 gap-y-4 sm:flex-row">
             <input
-              class="rounded-full border px-4 py-2"
+              class="mb-2 rounded-full border px-4 py-2 sm:mb-0"
               placeholder="Adresse Email"
               type="text"
             />
@@ -220,7 +243,9 @@
         </div>
       </footer>
     </div>
-    <div class="p-x-4 flex justify-between bg-black p-2 text-white">
+    <div
+      class="p-x-4 flex flex-col justify-between gap-y-4 bg-black p-2 text-white sm:flex-row"
+    >
       <p>Copyright © United Nations 2024</p>
       <ul class="flex gap-x-4">
         <li>Terms and conditions</li>
@@ -228,5 +253,16 @@
         <li>We are hiring</li>
       </ul>
     </div>
+    <script>
+      const menuTrigger = document.querySelector("#menuTrigger");
+      const menuTriggerIcons = menuTrigger.querySelectorAll("i");
+      const menu = document.querySelector("#menu");
+      menuTrigger.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        for (let icon of menuTriggerIcons) {
+          icon.classList.toggle("!hidden");
+        }
+      });
+    </script>
   </body>
 </html>
